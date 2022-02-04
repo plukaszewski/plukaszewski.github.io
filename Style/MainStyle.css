@@ -19,7 +19,7 @@ a
 
 article
 {
-    padding: 10px 10px 0px 10px;
+    padding: 10px;
 }
 
 aside
@@ -48,16 +48,22 @@ body
 content
 {
     height: 100%;
-    width: calc(100% - var(--aside-margin) - 10px);
-    margin-left: calc(var(--aside-margin) + 10px);
-    margin-right: 10px;
+    width: calc(100% - var(--aside-margin));
+    margin-left: calc(var(--aside-margin));
+    margin-right: 0px;
     margin-top: 0px;
+    padding: 10px; 
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
     overflow-y:scroll;
+}
+
+hr
+{
+    border: 1px solid var(--header-hover-bg);
 }
 
 html
@@ -114,6 +120,24 @@ i
     box-sizing: border-box;
     padding: 15px;
 }
+
+.see-more-button
+{
+    background-color: var(--header-bg);
+    color: var(--main-font);
+    padding: 5px;
+    display: block;
+    width: fit-content;
+    float: right;
+    margin-top: -40px;
+}
+
+.see-more-button:hover
+{
+    background-color: var(--header-hover-bg);
+    color: var(--secondary-font);
+}
+
 
 .skill-bar {
     position: relative;
@@ -208,6 +232,20 @@ i
     left: 10px;
     color: var(--secondary-font);
     opacity: 0.6;
+}
+
+.subtitle2
+{
+    color: var(--secondary-font);
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.subtitle3
+{
+    color: var(--secondary-font);
+    font-size: 16px;
+    padding-left: 5px;
 }
 
 .table-of-content-element
