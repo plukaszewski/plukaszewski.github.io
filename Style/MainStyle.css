@@ -1,0 +1,245 @@
+/* Vars */
+:root
+{
+    --bg: #181a1b;
+    --box-bg: #1d1f20;
+    --main-font: #e8e6e3;
+    --secondary-font: #9e9c98;
+    --header-hover-bg: #af0704;
+    --header-bg: #980503;
+    --small-box-bg: #242729;
+    --aside-margin: 250px;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+article
+{
+    padding: 10px 10px 0px 10px;
+}
+
+aside
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: var(--aside-margin);
+    width: 100%;
+    height: 100%;
+    background-color: var(--box-bg);
+}
+
+body
+{
+    position: relative;
+    margin: 0;
+    background-color: var(--bg);
+    color: var(--main-font);
+    font-family: "Verdana", sans-serif;
+    overflow-x: hidden;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+content
+{
+    height: 100%;
+    width: calc(100% - var(--aside-margin) - 10px);
+    margin-left: calc(var(--aside-margin) + 10px);
+    margin-right: 10px;
+    margin-top: 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    overflow-y:scroll;
+}
+
+html
+{
+    height: 100%;
+}
+
+p
+{
+    margin-top: 0;
+    text-align: justify;
+}
+
+section
+{
+    background: var(--box-bg);
+    max-width: 1000px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+i
+{
+    background: var(--header-bg);
+    padding: 8px;
+    border-radius: 50%;
+    color: var(--main-font);
+}
+
+.container
+{
+    margin: 0 auto;
+    max-width: 100%;
+    height: 100%;   
+}
+
+.box{
+    background: var(--box-bg);
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.box-header
+{
+    font-size: 26px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    color: var(--main-font);
+    width: 100%;
+    background: var(--header-bg);
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.skill-bar {
+    position: relative;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #2a2b2a;
+    background-color: var(--bg);
+    margin-top: 5px;
+}
+
+.skill-box
+{
+    padding: 20px;
+}
+
+.skill-box-header
+{
+    color: var(--secondary-font);
+}
+
+.skill-bar-fill
+{
+    display: block;
+    border-radius: 4px;
+    height: 30px;
+    background-color: #242729;
+}
+
+.skill-level
+{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: var(--main-font);
+    opacity: 0.6;
+}
+
+.skill-level1 /*Podstawowy*/
+{
+    width: 10%;
+}
+
+.skill-level2 /*Podstawowy*/
+{
+    width: 20%;
+}
+
+.skill-level3 /*Podstawowy*/
+{
+    width: 30%;
+}
+
+.skill-level4 /*Średni*/
+{
+    width: 40%;
+}
+
+.skill-level5 /*Średni*/
+{
+    width: 50%;
+}
+
+.skill-level6 /*Średnio-zaawansowany*/
+{
+    width: 60%;
+}
+
+.skill-level7 /*Średnio-zaawansowany*/
+{
+    width: 70%;
+}
+
+.skill-level8 /*Średnio-zaawansowany*/
+{
+    width: 80%;
+}
+
+.skill-level9 /*Zaawansowany*/
+{
+    width: 90%;
+}
+
+.skill-level10 /*Zaawansowany*/
+{
+    width: 99%;
+}
+
+.skill-name
+{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: var(--secondary-font);
+    opacity: 0.6;
+}
+
+.table-of-content-element
+{
+    margin-bottom: 5px;
+}
+
+.table-of-content-element-header
+{
+    font-size: 22px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    color: var(--main-font);
+    width: 100%;
+    background: var(--header-bg);
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.table-of-content-element-header:hover
+{
+    background-color: var(--header-hover-bg);
+}
+
+#table-of-content
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: var(--aside-margin);
+    width: 100%;
+    height: 100%;
+    background-color: var(--box-bg);
+}
