@@ -94,6 +94,11 @@ i
     color: var(--main-font);
 }
 
+img, video
+{
+    display: block;
+}
+
 .container
 {
     margin: 0 auto;
